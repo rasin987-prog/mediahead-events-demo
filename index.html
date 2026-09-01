@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru" data-theme="academic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Главная — Городской драматический театр</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+
+</head>
+<body>
+<header class="header">
+  <div class="header__inner container">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">ГДТ</span>
+      <span class="logo__text">
+        <span class="logo__title">Городской<br>драматический театр</span>
+        <span class="logo__season">104-й сезон</span>
+      </span>
+    </a>
+
+    <button type="button" class="burger" data-nav-toggle aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="header__bar" data-nav>
+      <nav class="nav"><a class="nav__link" href="afisha.html">Афиша</a><a class="nav__link" href="repertuar.html">Репертуар</a><a class="nav__link" href="truppa.html">Труппа</a><a class="nav__link" href="novosti.html">Новости</a><a class="nav__link" href="o-teatre.html">О театре</a></nav>
+      <div class="header__tools">
+        <div class="themes" role="group" aria-label="Оформление сайта">
+          <span class="themes__label">Тема</span>
+          <button type="button" class="themes__btn" data-theme-set="academic">Академический</button>
+          <button type="button" class="themes__btn" data-theme-set="indie">Независимый</button>
+          <button type="button" class="themes__btn" data-theme-set="chamber">Камерный</button>
+        </div>
+        <span class="lang"><b>RU</b> / EN</span>
+        <a class="btn btn--accent header__cta" href="afisha.html">Купить билет</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page page--home">
+  <section class="hero" data-slider><div class="hero__slide hero__slide--v5 is-active" data-slider-slide="0"><div class="hero__inner"><div class="container"><span class="hero__kicker">Премьера сезона</span><span class="show__author">Н. В. Гоголь</span><h2 class="hero__title">Ревизор</h2><p class="hero__text">Уездный город, где все друг друга знают и потому никто никого не видит. Десять показов в сентябре и октябре.</p><a class="btn btn--accent" href="afisha.html">Смотреть даты</a><div class="hero__controls"><button type="button" class="hero__arrow" data-slider-prev aria-label="Предыдущий слайд">‹</button><button type="button" class="hero__arrow" data-slider-next aria-label="Следующий слайд">›</button><span class="hero__dots"><button type="button" class="hero__dot is-active" data-slider-dot="0" aria-label="Слайд 1"></button><button type="button" class="hero__dot" data-slider-dot="1" aria-label="Слайд 2"></button><button type="button" class="hero__dot" data-slider-dot="2" aria-label="Слайд 3"></button></span></div></div></div></div><div class="hero__slide hero__slide--v4" data-slider-slide="1"><div class="hero__inner"><div class="container"><span class="hero__kicker">Спектакль месяца</span><span class="show__author">У. Шекспир</span><h2 class="hero__title">Гамлет</h2><p class="hero__text">Третий сезон в афише и самый посещаемый спектакль театра. Датский двор как хорошо работающее учреждение.</p><a class="btn btn--accent" href="spektakl.html">Купить билет</a><div class="hero__controls"><button type="button" class="hero__arrow" data-slider-prev aria-label="Предыдущий слайд">‹</button><button type="button" class="hero__arrow" data-slider-next aria-label="Следующий слайд">›</button><span class="hero__dots"><button type="button" class="hero__dot is-active" data-slider-dot="0" aria-label="Слайд 1"></button><button type="button" class="hero__dot" data-slider-dot="1" aria-label="Слайд 2"></button><button type="button" class="hero__dot" data-slider-dot="2" aria-label="Слайд 3"></button></span></div></div></div></div><div class="hero__slide hero__slide--v2" data-slider-slide="2"><div class="hero__inner"><div class="container"><span class="hero__kicker">Специальный проект</span><span class="show__author">Каждую субботу</span><h2 class="hero__title">Экскурсия по закулисью</h2><p class="hero__text">Цеха, склад декораций, гримёрные и сцена без зрителей. Экскурсию ведёт артист труппы Артём Бек.</p><a class="btn btn--accent" href="o-teatre.html">Записаться</a><div class="hero__controls"><button type="button" class="hero__arrow" data-slider-prev aria-label="Предыдущий слайд">‹</button><button type="button" class="hero__arrow" data-slider-next aria-label="Следующий слайд">›</button><span class="hero__dots"><button type="button" class="hero__dot is-active" data-slider-dot="0" aria-label="Слайд 1"></button><button type="button" class="hero__dot" data-slider-dot="1" aria-label="Слайд 2"></button><button type="button" class="hero__dot" data-slider-dot="2" aria-label="Слайд 3"></button></span></div></div></div></div></section>
+  <div class="container">
+    <section class="section"><div class="section__head"><h2 class="section__title">Спектакли</h2><span class="section__actions"><a class="btn btn--outline" href="afisha.html">Афиша</a> <a class="btn btn--outline" href="repertuar.html">Все спектакли</a></span></div><div class="tabs"><button type="button" class="tab-link is-active" data-tab-target="soon">Ближайшие</button><button type="button" class="tab-link" data-tab-target="premiere">Премьеры</button></div><div data-tab-panel="soon"><div class="grid grid--shows"><article class="card event-card"><a class="card__link" href="spektakl.html"><div class="poster poster--square poster--v4"><span class="poster__author">У. Шекспир</span><h3 class="poster__title">Гамлет</h3></div><div class="card__body"><span class="card__date">сегодня, вт, 19:00</span><span class="card__meta">Основная сцена</span></div></a></article><article class="card event-card"><a class="card__link" href="spektakl.html"><div class="poster poster--square poster--v1"><span class="poster__author">А. П. Чехов</span><h3 class="poster__title">Чайка</h3></div><div class="card__body"><span class="card__date">завтра, ср, 19:00</span><span class="card__meta">Основная сцена</span></div></a></article><article class="card event-card"><a class="card__link" href="spektakl.html"><div class="poster poster--square poster--v5"><span class="poster__author">Н. В. Гоголь</span><h3 class="poster__title">Ревизор</h3></div><div class="card__body"><span class="card__date">3 сентября, чт, 19:00</span><span class="card__meta">Основная сцена</span></div></a></article><article class="card event-card"><a class="card__link" href="spektakl.html"><div class="poster poster--square poster--v4"><span class="poster__author">А. П. Чехов</span><h3 class="poster__title">Три сестры</h3></div><div class="card__body"><span class="card__date">4 сентября, пт, 19:00</span><span class="card__meta">Основная сцена</span></div></a></article><article class="card event-card"><a class="card__link" href="spektakl.html"><div class="poster poster--square poster--v1"><span class="poster__author">А. Линдгрен</span><h3 class="poster__title">Малыш и Карлсон</h3></div><div class="card__body"><span class="card__date">5 сентября, сб, 12:00</span><span class="card__meta">Малая сцена</span></div></a></article><article class="card event-card"><a class="card__link" href="spektakl.html"><div class="poster poster--square poster--v5"><span class="poster__author">Н. В. Гоголь</span><h3 class="poster__title">Ревизор</h3></div><div class="card__body"><span class="card__date">5 сентября, сб, 19:00</span><span class="card__meta">Основная сцена</span></div></a></article><article class="card event-card"><a class="card__link" href="spektakl.html"><div class="poster poster--square poster--v1"><span class="poster__author">А. Линдгрен</span><h3 class="poster__title">Малыш и Карлсон</h3></div><div class="card__body"><span class="card__date">6 сентября, вс, 12:00</span><span class="card__meta">Малая сцена</span></div></a></article><article class="card event-card"><a class="card__link" href="spektakl.html"><div class="poster poster--square poster--v4"><span class="poster__author">У. Шекспир</span><h3 class="poster__title">Гамлет</h3></div><div class="card__body"><span class="card__date">6 сентября, вс, 18:00</span><span class="card__meta">Основная сцена</span></div></a></article></div></div><div class="is-hidden" data-tab-panel="premiere"><div class="grid grid--shows"><article class="card show-card" data-category="premiere"><a class="card__link" href="spektakl.html"><div class="poster poster--portrait poster--v5"><span class="poster__author">Н. В. Гоголь</span><h3 class="poster__title">Ревизор</h3></div><div class="card__body"><span class="badge">Премьера</span><span class="card__subtitle">Комедия в двух действиях</span><span class="card__meta">комедия · 12+</span></div></a></article></div></div></section>
+    <section class="section">
+      <div class="section__head">
+        <h2 class="section__title">Новости</h2>
+        <a class="btn btn--outline" href="novosti.html">Все новости</a>
+      </div>
+      <div class="grid grid--news"><article class="card news-card"><a class="card__link" href="novost.html"><div class="cover cover--v4"></div><div class="card__body"><span class="card__meta">28 августа, пятница</span><h3 class="card__title">Театр открывает 104-й сезон</h3><span class="card__subtitle">Первый спектакль сезона — «Гамлет» на основной сцене 1 сентября. Афиша сентября и октября уже опубликована.</span></div></a></article><article class="card news-card"><a class="card__link" href="novost.html"><div class="cover cover--v6"></div><div class="card__body"><span class="card__meta">14 августа, пятница</span><h3 class="card__title">«Ревизор» сыгран двадцать пятый раз</h3><span class="card__subtitle">Мартовская премьера сезона продолжает идти при полных залах и остаётся в афише на весь 104-й сезон.</span></div></a></article><article class="card news-card"><a class="card__link" href="novost.html"><div class="cover cover--v5"></div><div class="card__body"><span class="card__meta">27 июня, суббота</span><h3 class="card__title">«Вишнёвый сад» сыгран в последний раз</h3><span class="card__subtitle">Спектакль, шедший четыре сезона, снят с репертуара и передан в архив театра.</span></div></a></article><article class="card news-card"><a class="card__link" href="novost.html"><div class="cover cover--v1"></div><div class="card__body"><span class="card__meta">10 июня, среда</span><h3 class="card__title">Режиссёрская лаборатория объявила набор</h3><span class="card__subtitle">Театр принимает заявки от молодых режиссёров до 20 июля. Лучший эскиз войдёт в афишу сезона.</span></div></a></article></div>
+    </section>
+  </div>
+  <section class="subscribe">
+  <div class="container subscribe__inner">
+    <h2 class="subscribe__title">Будьте в курсе</h2>
+    <p>Раз в две недели рассказываем о премьерах, ближайших показах и открытых репетициях.</p>
+    <form class="subscribe__form" onsubmit="return false">
+      <input class="subscribe__input" type="email" placeholder="Ваша почта" aria-label="Ваша почта">
+      <button type="submit" class="btn btn--accent">Подписаться</button>
+    </form>
+    <p class="subscribe__note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <span class="footer__title">Городской драматический театр</span>
+      <p class="footer__line">г. Заречный, Театральная площадь, 1</p>
+      <p class="footer__line">+7 (495) 123-45-67</p>
+      <p class="footer__line">info@gorteatr.example</p>
+      <p class="footer__line footer__muted">Касса: ежедневно с 11:00 до 20:00</p>
+    </div>
+    <div class="footer__col">
+      <span class="footer__title">Разделы</span>
+      <a class="footer__link" href="afisha.html">Афиша</a>
+      <a class="footer__link" href="repertuar.html">Репертуар</a>
+      <a class="footer__link" href="truppa.html">Труппа</a>
+      <a class="footer__link" href="novosti.html">Новости</a>
+      <a class="footer__link" href="o-teatre.html">О театре</a>
+    </div>
+    <div class="footer__col">
+      <span class="footer__title">Мы в сети</span>
+      <span class="footer__link">Телеграм-канал театра</span>
+      <span class="footer__link">Сообщество во ВКонтакте</span>
+      <span class="footer__link">Видеоканал на RUTUBE</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 Городской драматический театр</span>
+    <span class="footer__muted">Прототип отраслевого решения Mediahead Events</span>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

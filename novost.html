@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru" data-theme="academic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Новость — Городской драматический театр</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+
+</head>
+<body>
+<header class="header">
+  <div class="header__inner container">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">ГДТ</span>
+      <span class="logo__text">
+        <span class="logo__title">Городской<br>драматический театр</span>
+        <span class="logo__season">104-й сезон</span>
+      </span>
+    </a>
+
+    <button type="button" class="burger" data-nav-toggle aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="header__bar" data-nav>
+      <nav class="nav"><a class="nav__link" href="afisha.html">Афиша</a><a class="nav__link" href="repertuar.html">Репертуар</a><a class="nav__link" href="truppa.html">Труппа</a><a class="nav__link is-active" href="novosti.html">Новости</a><a class="nav__link" href="o-teatre.html">О театре</a></nav>
+      <div class="header__tools">
+        <div class="themes" role="group" aria-label="Оформление сайта">
+          <span class="themes__label">Тема</span>
+          <button type="button" class="themes__btn" data-theme-set="academic">Академический</button>
+          <button type="button" class="themes__btn" data-theme-set="indie">Независимый</button>
+          <button type="button" class="themes__btn" data-theme-set="chamber">Камерный</button>
+        </div>
+        <span class="lang"><b>RU</b> / EN</span>
+        <a class="btn btn--accent header__cta" href="afisha.html">Купить билет</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page page--news">
+  <div class="container">
+    <div class="news__head"><span class="news__date">28 августа, пятница</span><h1 class="news__title">Театр открывает 104-й сезон</h1><p class="lead">Первый спектакль сезона — «Гамлет» на основной сцене 1 сентября. Афиша сентября и октября уже опубликована.</p></div><div class="news__cover"><div class="cover cover--v4"></div></div><div class="prose news__body"><p>104-й сезон Городской драматический театр открывает 1 сентября «Гамлетом» — спектаклем, который третий год остаётся самым посещаемым в афише. В сентябре и октябре сыграно будет сорок четыре показа на трёх площадках.</p><p>В планах сезона две премьеры на основной сцене и один эскиз режиссёрской лаборатории, который будет показан в театральном фойе в декабре.</p><p>Билеты на сентябрь и октябрь можно купить в кассе театра и на сайте. Абонементы на первое полугодие поступят в продажу 15 сентября.</p></div><section class="news__related"><h2 class="section__title">Связанный спектакль</h2><p><a href="spektakl.html">У. Шекспир. «Гамлет»</a></p></section><div class="news__nav"><a href="novost.html">«Ревизор» сыгран двадцать пятый раз →</a></div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <span class="footer__title">Городской драматический театр</span>
+      <p class="footer__line">г. Заречный, Театральная площадь, 1</p>
+      <p class="footer__line">+7 (495) 123-45-67</p>
+      <p class="footer__line">info@gorteatr.example</p>
+      <p class="footer__line footer__muted">Касса: ежедневно с 11:00 до 20:00</p>
+    </div>
+    <div class="footer__col">
+      <span class="footer__title">Разделы</span>
+      <a class="footer__link" href="afisha.html">Афиша</a>
+      <a class="footer__link" href="repertuar.html">Репертуар</a>
+      <a class="footer__link" href="truppa.html">Труппа</a>
+      <a class="footer__link" href="novosti.html">Новости</a>
+      <a class="footer__link" href="o-teatre.html">О театре</a>
+    </div>
+    <div class="footer__col">
+      <span class="footer__title">Мы в сети</span>
+      <span class="footer__link">Телеграм-канал театра</span>
+      <span class="footer__link">Сообщество во ВКонтакте</span>
+      <span class="footer__link">Видеоканал на RUTUBE</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 Городской драматический театр</span>
+    <span class="footer__muted">Прототип отраслевого решения Mediahead Events</span>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

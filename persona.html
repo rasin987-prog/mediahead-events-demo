@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru" data-theme="academic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Павел Горелов — Городской драматический театр</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+
+</head>
+<body>
+<header class="header">
+  <div class="header__inner container">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">ГДТ</span>
+      <span class="logo__text">
+        <span class="logo__title">Городской<br>драматический театр</span>
+        <span class="logo__season">104-й сезон</span>
+      </span>
+    </a>
+
+    <button type="button" class="burger" data-nav-toggle aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="header__bar" data-nav>
+      <nav class="nav"><a class="nav__link" href="afisha.html">Афиша</a><a class="nav__link" href="repertuar.html">Репертуар</a><a class="nav__link is-active" href="truppa.html">Труппа</a><a class="nav__link" href="novosti.html">Новости</a><a class="nav__link" href="o-teatre.html">О театре</a></nav>
+      <div class="header__tools">
+        <div class="themes" role="group" aria-label="Оформление сайта">
+          <span class="themes__label">Тема</span>
+          <button type="button" class="themes__btn" data-theme-set="academic">Академический</button>
+          <button type="button" class="themes__btn" data-theme-set="indie">Независимый</button>
+          <button type="button" class="themes__btn" data-theme-set="chamber">Камерный</button>
+        </div>
+        <span class="lang"><b>RU</b> / EN</span>
+        <a class="btn btn--accent header__cta" href="afisha.html">Купить билет</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page page--person">
+  <div class="container">
+    <div class="person__head"><div class="person__photo"><div class="portrait portrait--v2"><span class="portrait__initials">ПГ</span></div></div><div><h1 class="person__name">Павел Горелов</h1><p class="person__position">артист труппы</p><span class="person__honors">заслуженный артист России</span><div class="prose person__bio"><p>Пришёл в театр сразу после училища и остался в нём на всю карьеру. За двадцать три года сыграл более сорока ролей — от эпизодов до всех главных мужских партий классического репертуара.</p><p>Актёр острого рисунка: одинаково убедителен в комедии и в трагедии, что для труппы такого размера особенно ценно.</p><p>Ведёт занятия по сценической речи в театральной студии при театре.</p></div></div></div><section class="section"><h2 class="section__title">Спектакли с участием</h2><p class="person__derived-note">Список формируется автоматически на основе связей персоны со спектаклями</p><div class="table"><div class="table__row"><span class="table__key"><a href="spektakl.html">Ревизор</a></span><span class="table__value">Городничий</span></div><div class="table__row"><span class="table__key"><a href="spektakl.html">Гамлет</a></span><span class="table__value">Клавдий</span></div><div class="table__row"><span class="table__key"><a href="spektakl.html">Чайка</a></span><span class="table__value">Тригорин</span></div><div class="table__row"><span class="table__key"><a href="spektakl.html">Кабала святош</a></span><span class="table__value">Мольер</span></div><div class="table__row"><span class="table__key"><a href="spektakl.html">Три сестры</a></span><span class="table__value">Вершинин</span></div><div class="table__row"><span class="table__key"><a href="spektakl.html">Вишнёвый сад</a></span><span class="table__value">Лопахин</span></div></div></section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <span class="footer__title">Городской драматический театр</span>
+      <p class="footer__line">г. Заречный, Театральная площадь, 1</p>
+      <p class="footer__line">+7 (495) 123-45-67</p>
+      <p class="footer__line">info@gorteatr.example</p>
+      <p class="footer__line footer__muted">Касса: ежедневно с 11:00 до 20:00</p>
+    </div>
+    <div class="footer__col">
+      <span class="footer__title">Разделы</span>
+      <a class="footer__link" href="afisha.html">Афиша</a>
+      <a class="footer__link" href="repertuar.html">Репертуар</a>
+      <a class="footer__link" href="truppa.html">Труппа</a>
+      <a class="footer__link" href="novosti.html">Новости</a>
+      <a class="footer__link" href="o-teatre.html">О театре</a>
+    </div>
+    <div class="footer__col">
+      <span class="footer__title">Мы в сети</span>
+      <span class="footer__link">Телеграм-канал театра</span>
+      <span class="footer__link">Сообщество во ВКонтакте</span>
+      <span class="footer__link">Видеоканал на RUTUBE</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 Городской драматический театр</span>
+    <span class="footer__muted">Прототип отраслевого решения Mediahead Events</span>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>

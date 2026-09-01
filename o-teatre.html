@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="ru" data-theme="academic">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>О театре — Городской драматический театр</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/components.css">
+
+</head>
+<body>
+<header class="header">
+  <div class="header__inner container">
+    <a class="logo" href="index.html">
+      <span class="logo__mark">ГДТ</span>
+      <span class="logo__text">
+        <span class="logo__title">Городской<br>драматический театр</span>
+        <span class="logo__season">104-й сезон</span>
+      </span>
+    </a>
+
+    <button type="button" class="burger" data-nav-toggle aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="header__bar" data-nav>
+      <nav class="nav"><a class="nav__link" href="afisha.html">Афиша</a><a class="nav__link" href="repertuar.html">Репертуар</a><a class="nav__link" href="truppa.html">Труппа</a><a class="nav__link" href="novosti.html">Новости</a><a class="nav__link is-active" href="o-teatre.html">О театре</a></nav>
+      <div class="header__tools">
+        <div class="themes" role="group" aria-label="Оформление сайта">
+          <span class="themes__label">Тема</span>
+          <button type="button" class="themes__btn" data-theme-set="academic">Академический</button>
+          <button type="button" class="themes__btn" data-theme-set="indie">Независимый</button>
+          <button type="button" class="themes__btn" data-theme-set="chamber">Камерный</button>
+        </div>
+        <span class="lang"><b>RU</b> / EN</span>
+        <a class="btn btn--accent header__cta" href="afisha.html">Купить билет</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="page">
+  <div class="container">
+    <h1 class="page__title">О театре</h1>
+    <div class="prose"><p class="lead">Городской драматический театр работает с 1922 года. В труппе двенадцать человек, в афише — шесть спектаклей текущего репертуара на трёх площадках.</p><h2 class="section__title">Как устроен театр</h2><p>Театр располагает тремя игровыми площадками. Основная сцена на 420 мест принимает спектакли большой формы, малая сцена на 90 мест — камерные постановки, где зритель сидит вплотную к игровой площадке. Театральное фойе на 60 мест используется для эскизов режиссёрской лаборатории, детских спектаклей и творческих встреч.</p><p>Труппа постоянная: артисты заняты в нескольких спектаклях одновременно, вводы новых исполнителей делаются редко и осознанно. Такой порядок работы позволяет держать в афише шесть названий и играть более двадцати показов в месяц.</p><h2 class="section__title">Репертуарная политика</h2><p>Основу афиши составляет русская и мировая классика. Театр не занимается модернизацией текстов: пьеса играется в авторской редакции, а современность спектакля обеспечивается способом существования артистов, а не переписанными репликами.</p><p>Каждый сезон в афише появляется одна постановка для детей и один эскиз молодого режиссёра. Спектакли, отработавшие свой срок, снимаются с репертуара и передаются в архив вместе с фотографиями и составами.</p><h2 class="section__title">Доступная среда</h2><p>Основная сцена оборудована пандусом и местами для зрителей на колясках. Билеты на эти места бронируются по телефону кассы.</p><p>Несколько раз в сезон театр играет спектакли с тифлокомментированием. Ближайший такой показ — «Ревизор» 11 октября.</p></div>
+    <section class="contacts"><h2 class="section__title">Контакты</h2><div class="contacts__grid"><div class="contacts__item"><span class="contacts__label">Адрес</span><span class="contacts__value">г. Заречный, Театральная площадь, 1</span></div><div class="contacts__item"><span class="contacts__label">Телефон</span><span class="contacts__value">+7 (495) 123-45-67</span></div><div class="contacts__item"><span class="contacts__label">Почта</span><span class="contacts__value">info@gorteatr.example</span></div><div class="contacts__item"><span class="contacts__label">Касса</span><span class="contacts__value">ежедневно с 11:00 до 20:00, перерыв с 15:00 до 16:00</span></div></div><div class="map-stub">Схема проезда</div></section>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__col">
+      <span class="footer__title">Городской драматический театр</span>
+      <p class="footer__line">г. Заречный, Театральная площадь, 1</p>
+      <p class="footer__line">+7 (495) 123-45-67</p>
+      <p class="footer__line">info@gorteatr.example</p>
+      <p class="footer__line footer__muted">Касса: ежедневно с 11:00 до 20:00</p>
+    </div>
+    <div class="footer__col">
+      <span class="footer__title">Разделы</span>
+      <a class="footer__link" href="afisha.html">Афиша</a>
+      <a class="footer__link" href="repertuar.html">Репертуар</a>
+      <a class="footer__link" href="truppa.html">Труппа</a>
+      <a class="footer__link" href="novosti.html">Новости</a>
+      <a class="footer__link" href="o-teatre.html">О театре</a>
+    </div>
+    <div class="footer__col">
+      <span class="footer__title">Мы в сети</span>
+      <span class="footer__link">Телеграм-канал театра</span>
+      <span class="footer__link">Сообщество во ВКонтакте</span>
+      <span class="footer__link">Видеоканал на RUTUBE</span>
+    </div>
+  </div>
+  <div class="container footer__bottom">
+    <span>© 2026 Городской драматический театр</span>
+    <span class="footer__muted">Прототип отраслевого решения Mediahead Events</span>
+  </div>
+</footer>
+
+<script src="js/site.js"></script>
+</body>
+</html>
