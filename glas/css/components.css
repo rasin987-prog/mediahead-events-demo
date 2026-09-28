@@ -878,8 +878,10 @@
 }
 
 .partner__logo {
-  max-height: 56px;
+  height: 56px;
   width: auto;
+  max-width: 190px;
+  object-fit: contain;
   filter: grayscale(1);
   opacity: 0.65;
   transition: filter 0.2s, opacity 0.2s;
@@ -888,7 +890,8 @@
 .partner:hover .partner__logo { filter: none; opacity: 1; }
 
 @media (min-width: 768px) {
-  .partner, .partner__logo { height: 64px; max-height: 64px; }
+  .partner { height: 64px; }
+  .partner__logo { height: 64px; max-width: 220px; }
 }
 
 /* --- Фотография в витрине --------------------------------------------- */
