@@ -1,0 +1,109 @@
+/* Сброс, типографика, сетка. */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-text);
+  font-size: var(--scale-body);
+  line-height: 1.55;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.08;
+  letter-spacing: var(--tracking-display);
+}
+
+p { margin: 0 0 1em; }
+p:last-child { margin-bottom: 0; }
+
+a { color: inherit; text-decoration: none; }
+a:hover { color: var(--accent); }
+
+img { max-width: 100%; display: block; }
+
+button { font: inherit; color: inherit; cursor: pointer; }
+
+ul { margin: 0; padding: 0; list-style: none; }
+
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.page { padding-bottom: var(--density); }
+
+.page__title {
+  font-size: var(--scale-h1);
+  margin: 48px 0 32px;
+}
+
+.section { padding-block: var(--density); }
+
+.section__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: var(--border-width) solid var(--line);
+}
+
+.section__title {
+  font-size: var(--scale-h2);
+  margin: 0;
+}
+
+.lead {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 62ch;
+}
+
+.prose { max-width: 68ch; }
+.prose .section__title { margin: 40px 0 16px; }
+.prose .lead { margin-bottom: 32px; }
+
+.muted { color: var(--muted); }
+.small { font-size: var(--scale-small); }
+
+.is-hidden { display: none !important; }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px; height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+.grid { display: grid; gap: 32px 24px; }
+.grid--shows { grid-template-columns: repeat(2, 1fr); }
+.grid--persons { grid-template-columns: repeat(2, 1fr); }
+.grid--news { grid-template-columns: 1fr; }
+
+@media (min-width: 768px) {
+  .container { padding: 0 32px; }
+  .grid--shows { grid-template-columns: repeat(3, 1fr); }
+  .grid--persons { grid-template-columns: repeat(3, 1fr); }
+  .grid--news { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .container { padding: 0 40px; }
+  .grid--shows { grid-template-columns: repeat(4, 1fr); }
+  .grid--persons { grid-template-columns: repeat(4, 1fr); }
+  .grid--news { grid-template-columns: repeat(4, 1fr); }
+}

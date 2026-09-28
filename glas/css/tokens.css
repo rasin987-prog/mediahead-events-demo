@@ -1,0 +1,83 @@
+/* Токены дизайн-системы. Тема по умолчанию — academic. */
+
+:root,
+[data-theme="academic"] {
+  --ink: #1A1A1A;
+  --paper: #FFFFFF;
+  --surface: #F4F2EF;
+  --muted: #6E6A66;
+  --line: #DDD8D2;
+  --accent: #7A1F2B;
+  --accent-contrast: #FFFFFF;
+
+  --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-text: Inter, system-ui, 'Segoe UI', Arial, sans-serif;
+
+  --scale-h1: clamp(2rem, 1.2rem + 3.2vw, 3.75rem);
+  --scale-h2: clamp(1.5rem, 1.1rem + 1.6vw, 2.25rem);
+  --scale-h3: 1.25rem;
+  --scale-body: 1rem;
+  --scale-small: 0.875rem;
+  --tracking-display: -0.01em;
+
+  --radius: 0px;
+  --density: 72px;
+  --border-width: 1px;
+
+  --poster-1-bg: #7A1F2B; --poster-1-ink: #F6EFE9;
+  --poster-2-bg: #223A5E; --poster-2-ink: #EAF0F7;
+  --poster-3-bg: #4A5D3A; --poster-3-ink: #F1F3EA;
+  --poster-4-bg: #8A5A22; --poster-4-ink: #FBF3E6;
+  --poster-5-bg: #2E2A28; --poster-5-ink: #EDE7E1;
+  --poster-6-bg: #5C3A4E; --poster-6-ink: #F5EBF1;
+}
+
+[data-theme="indie"] {
+  --ink: #0B0B0B;
+  --paper: #FFFFFF;
+  --surface: #111111;
+  --muted: #7A7A7A;
+  --line: #111111;
+  --accent: #E8FF3A;
+  --accent-contrast: #0B0B0B;
+
+  --font-display: Inter, system-ui, 'Segoe UI', Arial, sans-serif;
+  --font-text: Inter, system-ui, 'Segoe UI', Arial, sans-serif;
+
+  --tracking-display: -0.03em;
+  --radius: 0px;
+  --density: 88px;
+  --border-width: 2px;
+
+  --poster-1-bg: #0B0B0B; --poster-1-ink: #E8FF3A;
+  --poster-2-bg: #E8FF3A; --poster-2-ink: #0B0B0B;
+  --poster-3-bg: #0B0B0B; --poster-3-ink: #FF5A3A;
+  --poster-4-bg: #FF5A3A; --poster-4-ink: #0B0B0B;
+  --poster-5-bg: #0B0B0B; --poster-5-ink: #3AE8FF;
+  --poster-6-bg: #3AE8FF; --poster-6-ink: #0B0B0B;
+}
+
+[data-theme="chamber"] {
+  --ink: #2E2724;
+  --paper: #FBF7F1;
+  --surface: #F2EAE0;
+  --muted: #8A7F75;
+  --line: #E2D6C7;
+  --accent: #C2643C;
+  --accent-contrast: #FFFFFF;
+
+  --font-display: Inter, system-ui, 'Segoe UI', Arial, sans-serif;
+  --font-text: Inter, system-ui, 'Segoe UI', Arial, sans-serif;
+
+  --tracking-display: 0em;
+  --radius: 12px;
+  --density: 64px;
+  --border-width: 1px;
+
+  --poster-1-bg: #C2643C; --poster-1-ink: #FFF6EE;
+  --poster-2-bg: #8C7B52; --poster-2-ink: #FDF8EE;
+  --poster-3-bg: #A8543F; --poster-3-ink: #FFF2EA;
+  --poster-4-bg: #6E7A5E; --poster-4-ink: #F4F6EE;
+  --poster-5-bg: #B08154; --poster-5-ink: #FFF7EC;
+  --poster-6-bg: #96604E; --poster-6-ink: #FDF0E9;
+}
