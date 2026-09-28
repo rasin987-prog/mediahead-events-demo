@@ -6,30 +6,22 @@
 <title>Главная — Русский духовный театр «Глас»</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap">
-<link rel="stylesheet" href="css/tokens.css?v=202609281115">
-<link rel="stylesheet" href="css/base.css?v=202609281115">
-<link rel="stylesheet" href="css/components.css?v=202609281115">
+<link rel="stylesheet" href="css/tokens.css?v=202609281137">
+<link rel="stylesheet" href="css/base.css?v=202609281137">
+<link rel="stylesheet" href="css/components.css?v=202609281137">
+<style>:root{--accent:#1C3A6E;--surface:#F6EFE1;--paper:#FFFFFF;--line:#E7DFCE;--ink:#1A1A1A;}</style>
 
 </head>
 <body>
 <header class="header">
   <div class="header__inner container">
-    <a class="logo" href="index.html"><span class="logo__mark">ГЛАС</span><span class="logo__text"><span class="logo__title">Русский духовный<br>театр «Глас»</span><span class="logo__season">38-й сезон</span></span></a>
-
+    <a class="logo" href="index.html"><img class="logo__img" src="img/brand/logo.png" alt="Русский духовный театр «Глас»" height="46"><span class="logo__text"><span class="logo__title">Русский духовный<br>театр «Глас»</span><span class="logo__season">38-й сезон</span></span></a>
     <button type="button" class="burger" data-nav-toggle aria-label="Меню">
       <span></span><span></span><span></span>
     </button>
-
     <div class="header__bar" data-nav>
-      <nav class="nav"><a class="nav__link" href="afisha.html">Афиша</a><a class="nav__link" href="repertuar.html">Репертуар</a><a class="nav__link" href="truppa.html">Труппа</a><a class="nav__link" href="novosti.html">Новости</a><a class="nav__link" href="o-teatre.html">О театре</a></nav>
+      <nav class="nav"><a class="nav__link" href="afisha.html">Афиша</a><a class="nav__link" href="repertuar.html">Репертуар</a><a class="nav__link" href="truppa.html">Артисты</a><a class="nav__link" href="novosti.html">Новости</a><a class="nav__link" href="pushkinskaya-karta.html">Пушкинская карта</a><a class="nav__link" href="otzyvy.html">Отзывы</a><a class="nav__link" href="o-teatre.html">О театре</a></nav>
       <div class="header__tools">
-        <div class="themes" role="group" aria-label="Оформление сайта">
-          <span class="themes__label">Тема</span>
-          <button type="button" class="themes__btn" data-theme-set="academic">Академический</button>
-          <button type="button" class="themes__btn" data-theme-set="indie">Независимый</button>
-          <button type="button" class="themes__btn" data-theme-set="chamber">Камерный</button>
-        </div>
-        <span class="lang"><b>RU</b> / EN</span>
         <a class="btn btn--accent header__cta" href="afisha.html">Купить билет</a>
       </div>
     </div>
@@ -49,18 +41,6 @@
     </section>
   </div>
   <section class="partners"><div class="container"><h2 class="partners__title">Партнёры театра</h2><div class="partners__grid"><a class="partner" href="https://foma.ru/" target="_blank" rel="noopener" title="«Фома» — православный журнал"><img class="partner__logo" src="img/partners/foma.png" alt="«Фома» — православный журнал" height="56"></a><a class="partner" href="https://riamo.ru/" target="_blank" rel="noopener" title="РИАМО"><img class="partner__logo" src="img/partners/riamo.png" alt="РИАМО" height="56"></a><a class="partner" href="https://radiovera.ru/" target="_blank" rel="noopener" title="Радио ВЕРА"><img class="partner__logo" src="img/partners/radiovera.png" alt="Радио ВЕРА" height="56"></a><a class="partner" href="https://grants.culture.ru/" target="_blank" rel="noopener" title="Президентский фонд культурных инициатив"><img class="partner__logo" src="img/partners/pfki.png" alt="Президентский фонд культурных инициатив" height="56"></a><span class="partner" title="МТС"><img class="partner__logo" src="img/partners/mts.png" alt="МТС" height="56"></span><a class="partner" href="https://fond-am.ru/" target="_blank" rel="noopener" title="Фонд Андрея Мельниченко"><img class="partner__logo" src="img/partners/fond-am.png" alt="Фонд Андрея Мельниченко" height="56"></a><a class="partner" href="https://kultura.mos.ru/" target="_blank" rel="noopener" title="Департамент культуры города Москвы"><img class="partner__logo" src="img/partners/dk-mos.png" alt="Департамент культуры города Москвы" height="56"></a></div></div></section>
-  <section class="subscribe">
-  <div class="container subscribe__inner">
-    <h2 class="subscribe__title">Будьте в курсе</h2>
-    <p>Раз в две недели рассказываем о премьерах, ближайших показах и открытых репетициях.</p>
-    <form class="subscribe__form" onsubmit="return false">
-      <input class="subscribe__input" type="email" placeholder="Ваша почта" aria-label="Ваша почта">
-      <button type="submit" class="btn btn--accent">Подписаться</button>
-    </form>
-    <p class="subscribe__note">Нажимая кнопку, вы соглашаетесь с политикой обработки персональных данных.</p>
-  </div>
-</section>
-
 </main>
 
 <footer class="footer">

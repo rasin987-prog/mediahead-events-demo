@@ -922,3 +922,45 @@
 .hero__slide--photo .hero__text { color: #fff; opacity: 0.92; }
 .hero__slide--photo .hero__title { color: #fff; }
 .hero__slide--photo .btn--accent { background: #fff; border-color: #fff; color: #111; }
+
+/* --- Логотип картинкой ------------------------------------------------ */
+
+.logo__img { height: 46px; width: auto; flex: 0 0 auto; }
+
+/* --- Отзывы ------------------------------------------------------------ */
+
+.reviews {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+
+.review { background: var(--surface); border-color: var(--surface); }
+.review__author { font-size: var(--scale-h3); margin-bottom: 8px; }
+.review__text { margin: 0; font-size: 0.9375rem; line-height: 1.55; }
+
+@media (min-width: 768px) {
+  .reviews { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1200px) {
+  .reviews { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* --- Ссылки в контенте ------------------------------------------------ */
+
+.prose a,
+.news__body a,
+.news__related a,
+.table__key a,
+.table__value a,
+.news__nav a,
+.person__derived-note + .table a { color: var(--accent); }
+
+.prose a:hover,
+.news__body a:hover,
+.table__key a:hover,
+.table__value a:hover,
+.news__nav a:hover { text-decoration: underline; }
+
+.contacts__value a { color: var(--accent); }
